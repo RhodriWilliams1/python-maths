@@ -19,30 +19,30 @@ repos:
         types: [python, yaml, markdown]
 
   - repo: https://github.com/DavidAnson/markdownlint-cli2
-    rev: v0.18.1
+    rev: v0.20.0
     hooks:
       - id: markdownlint-cli2
         args: []
 
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.20.0
+    rev: v3.21.2
     hooks:
       - id: pyupgrade
         args: [--py38-plus]
 
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.18.2
+    rev: v1.19.1
     hooks:
       - id: mypy
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.13.1
+    rev: v0.15.0
     hooks:
       - id: ruff
         args: [--fix, --exit-non-zero-on-fix, --show-fixes]
 
   - repo: https://github.com/psf/black-pre-commit-mirror
-    rev: 25.9.0
+    rev: 26.1.0
     hooks:
       - id: black
         types: [python]
@@ -68,7 +68,7 @@ repos:
       - id: prettier
 
   - repo: https://github.com/numpy/numpydoc
-    rev: v1.9.0
+    rev: v1.10.0
     hooks:
       - id: numpydoc-validation
         exclude: |
