@@ -36,12 +36,13 @@ mouse over it.
 
 ### Create the `<github_user>/<issue_number>-zero-division-amend-fixup` branch
 
-This branch doesn't exist so needs creating, make sure `main` is up-to-date before creating it.
+This branch doesn't exist so needs creating, make sure `main` is up-to-date before creating it. Substitute
+`<github_user>` for your username.
 
 ```bash
 git switch main
 git pull
-git switch -c <github_user>/<issue_number>-zero-division-amend-fixup
+git switch -c <github_user>/1-zero-division-amend-fixup
 ```
 
 ### Add example of zero division to docstring
@@ -138,12 +139,12 @@ to automatically close the related issue.
 
 Once approved merge the pull request to `main`.
 
-### Delete your local `<github_user>/<issue_number>-zero-division-amend-fixup` branch
+### Delete your local `<github_user>/1-zero-division-amend-fixup` branch
 
 We can now switch to `main`, pull down the merged changes and delete the local copy of the branch you created.
 
 ```bash
 git switch main
 git pull
-git branch -d <github-user>/<issue-number>-zero-division-amend-fixup
+git branch -d <github-user>/1-zero-division-amend-fixup
 ```

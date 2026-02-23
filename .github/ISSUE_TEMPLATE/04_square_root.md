@@ -24,7 +24,7 @@ Create a branch locally from the `main` branch to work on this task. Try using t
 `<github_username>/<issue_number>-<short_description>`, e.g.
 
 ```bash
-git switch -c "ns-rse/2-square-root"
+git switch -c "ns-rse/4-square-root"
 ```
 
 ### Add a `square_root()` function to the `pythonmaths/arithmetic.py` module
