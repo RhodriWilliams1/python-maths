@@ -24,7 +24,7 @@ Create a branch locally from the `main` branch to work on this task. Try using t
 `<github_username>/<issue_number>-<short_description>`, e.g.
 
 ```bash
-git switch -c "ns-rse/1-zero-division"
+git switch -c "ns-rse/3-zero-division"
 ```
 
 ### Add a `try: ... except: ...` to capture `ZeroDivisionError`
@@ -95,5 +95,5 @@ Once approved merge the pull request and delete your local branch.
 ```bash
 git switch main
 git pull
-git branch -d ns-rse/1-zero-division
+git branch -d ns-rse/3-zero-division
 ```

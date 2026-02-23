@@ -9,7 +9,7 @@ assignees: ""
 Use the checklist to tick off the sub-tasks as you complete them. Some of the tasks rely on material that has already
 been covered in the lesson so try and use what you have learnt. The commands are provided if required though.
 
-- [ ] Create and switch to the `<github-user>/<issue-number>-square-root-amend-fixup` branch.
+- [ ] Create and switch to the `<github-user>/2-square-root-amend-fixup` branch.
 - [ ] Rebase the branch onto `main` to ensure it is up-to-date (**Hint** - you may not have all changes that have been
       merged into `main` so use previous experience to `git rebase`).
 - [ ] Copy and paste the example to the docstring of the `square_root()` function that shows the consequence of trying to
@@ -26,7 +26,7 @@ You have now used `git commit --amend`, lets try `git commit --fixup`.
 - [ ] Perform an interactive rebase to automatically squash the changes.
 - [ ] Remove the empty commit and push your changes.
 - [ ] Make a pull request and once approved merge.
-- [ ] Delete your local `<github-user>/<issue-number>-square-root-amend-fixup` branch
+- [ ] Delete your local `<github-user>/2-square-root-amend-fixup` branch
 
 ## Instructions
 
@@ -145,12 +145,12 @@ to automatically close the related issue.
 
 Once approved merge the pull request to `main`.
 
-### Delete your local `<github-user>/<issue-number>-square-root-amend-fixup` branch
+### Delete your local `<github-user>/2-square-root-amend-fixup` branch
 
 We can now switch to `main`, pull down the merged changes and delete the local copy of the branch you created.
 
 ```bash
 git switch main
 git pull
-git branch -d <github-user>/<issue-number>-square-root-amend-fixup
+git branch -d <github-user>/2-square-root-amend-fixup
 ```
