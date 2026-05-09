@@ -60,9 +60,12 @@ def divide(x: int | float, y: int | float) -> float:
     """
 
     # Prevent division by zero
-    if y == 0:
-        raise ZeroDivisionError("Cannot divide by zero (y must not be 0)")
-    return x / y
+    try:
+        return x / y
+    except ZeroDivisionError as e:
+        raise ZeroDivisionError(
+            "You cannot divide by 0, choose another value for 'y'."
+        ) from e
 
 
 def multiply(x: int | float, y: int | float) -> float:
