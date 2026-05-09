@@ -24,6 +24,8 @@ def add(x: int | float, y: int | float) -> float:
       9
     >>> arithmetic.add(1.45, 1.89)
       3.34
+    >>> arithmetic.divide(3, 0)
+        You can not divide by 0, please chose another value for 'y'
     """
     return x + y
 
@@ -51,7 +53,15 @@ def divide(x: int | float, y: int | float) -> float:
         5.0
     >>> arithmetic.divide(5, 2)
         2.5
+    >>> arithmetic.divide(3, 0)
+        You can not divide by 0, please choose another value for 'y'.
+    >>> arithmetic.divide(1, 0.1)
+        10
     """
+
+    # Prevent division by zero
+    if y == 0:
+        raise ZeroDivisionError("Cannot divide by zero (y must not be 0)")
     return x / y
 
 
